@@ -1,0 +1,35 @@
+version: '3'
+services:
+  ts-node-base-app:
+    container_name: ts-node-base-app
+    restart: always
+    build: .
+    command: npm run start
+    depends_on:
+      - postgres
+    links:
+      - postgres
+    environment:
+      - PORT=1337
+    networks:
+      - app-connect
+    ports:
+      - '1337:1337'
+
+  postgres:
+    container_name: postgres
+    image: postgres:11
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    networks:
+      - app-connect
+
+volumes:
+  postgres:
+
+networks:
+  app-connect:
+    driver: bridge
