@@ -1,10 +1,10 @@
 import {MigrationInterface, QueryRunner} from "typeorm";
 
-export class AddCompanyToUser1591806226018 implements MigrationInterface {
-    name = 'AddCompanyToUser1591806226018'
+export class AddCompanyToUser1591807017642 implements MigrationInterface {
+    name = 'AddCompanyToUser1591807017642'
 
     public async up(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.query(`ALTER TABLE "public"."user" ADD "company" character varying NOT NULL`, undefined);
+        await queryRunner.query(`ALTER TABLE "public"."user" ADD "company" character varying DEFAULT null`, undefined);
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
