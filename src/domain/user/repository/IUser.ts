@@ -5,5 +5,5 @@ export interface IUser {
   firstName: string;
   lastName: string;
   age: number;
-  company: string;
+  company?: string;
 }
