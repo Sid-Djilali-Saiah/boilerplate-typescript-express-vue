@@ -35,6 +35,9 @@ export default class User extends BaseEntity {
   @Column()
   age!: number;
 
+  @Column()
+  company?: string;
+
   @CreateDateColumn({ type: 'timestamp' })
   createdAt!: Date;
 
