@@ -2,9 +2,9 @@
   "name": "ts-node-app",
   "version": "0.0.1",
   "license": "MIT",
-  "repository": "git@github.com:m1theus/ts-node-base-app.git",
-  "author": "Matheus Martins",
-  "description": "Base Project with NodeJS, Express, TypeORM.",
+  "repository": "git@github.com:Sid-Djilali-Saiah/boilerplate-typescript-express-vue",
+  "author": "Sid DJILALI SAIAH & Abderrahim CHERKAOUI",
+  "description": "Base backend with NodeJS, Express, TypeORM.",
   "tags": [
     "orm",
     "typeorm",

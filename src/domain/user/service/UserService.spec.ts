@@ -10,10 +10,10 @@ describe('User Service', () => {
     const userService = new UserService(mockUserRepository);
 
     const user = await userService.save({
-      firstName: 'Matheus',
-      lastName: 'Martins',
+      firstName: 'John',
+      lastName: 'Doe',
       age: 21,
-      email: 'msilva@example.com',
+      email: 'john.doe@example.com',
       password: '123456',
     });
 
@@ -25,19 +25,19 @@ describe('User Service', () => {
     const userService = new UserService(mockUserRepository);
 
     await mockUserRepository.save({
-      firstName: 'Matheus',
-      lastName: 'Martins',
+      firstName: 'John',
+      lastName: 'Doe',
       age: 21,
-      email: 'msilva@example.com',
+      email: 'john.doe@example.com',
       password: '123456',
     });
 
     expect(
       userService.save({
-        firstName: 'Matheus',
-        lastName: 'Martins',
+        firstName: 'John',
+        lastName: 'Doe',
         age: 21,
-        email: 'msilva@example.com',
+        email: 'john.doe@example.com',
         password: '123456',
       }),
     ).rejects.toBeInstanceOf(HttpError);
@@ -48,10 +48,10 @@ describe('User Service', () => {
     const userService = new UserService(mockUserRepository);
 
     const findUser = await userService.save({
-      firstName: 'Matheus',
-      lastName: 'Martins',
+      firstName: 'John',
+      lastName: 'Doe',
       age: 21,
-      email: 'msilva@example.com',
+      email: 'john.doe@example.com',
       password: '123456',
     });
 
@@ -65,10 +65,10 @@ describe('User Service', () => {
     const userService = new UserService(mockUserRepository);
 
     const findUser = await userService.save({
-      firstName: 'Matheus',
-      lastName: 'Martins',
+      firstName: 'John',
+      lastName: 'Doe',
       age: 21,
-      email: 'msilva@example.com',
+      email: 'john.doe@example.com',
       password: '123456',
     });
 
@@ -82,10 +82,10 @@ describe('User Service', () => {
     const userService = new UserService(mockUserRepository);
 
     const findUser = await userService.save({
-      firstName: 'Matheus',
-      lastName: 'Martins',
+      firstName: 'John',
+      lastName: 'Doe',
       age: 21,
-      email: 'msilva@example.com',
+      email: 'john.doe@example.com',
       password: '123456',
     });
 
@@ -97,10 +97,10 @@ describe('User Service', () => {
     const userService = new UserService(mockUserRepository);
 
     const findUser = await userService.save({
-      firstName: 'Matheus',
-      lastName: 'Martins',
+      firstName: 'John',
+      lastName: 'Doe',
       age: 21,
-      email: 'msilva@example.com',
+      email: 'john.doe@example.com',
       password: '123456',
     });
 
@@ -112,10 +112,10 @@ describe('User Service', () => {
     const userService = new UserService(mockUserRepository);
 
     const findUser = await userService.save({
-      firstName: 'Matheus',
-      lastName: 'Martins',
+      firstName: 'John',
+      lastName: 'Doe',
       age: 21,
-      email: 'msilva@example.com',
+      email: 'john.doe@example.com',
       password: '123456',
     });
 
