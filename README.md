@@ -1,11 +1,5 @@
 ## Base Project with NodeJS, Express, JWT, TSyringe and TypeORM
 
----
-
-![Node.js CI](https://github.com/m1theus/ts-node-base-app/workflows/Node.js%20CI/badge.svg)
-
----
-
 Steps to run this project:
 
 1. Install Dependencies
